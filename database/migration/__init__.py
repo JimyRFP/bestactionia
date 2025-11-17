@@ -1,0 +1,6 @@
+from database.connection import databaseIa
+from database.models.challenge import ChallengeModel
+from database.models.challengeoption import ChallengeOptionModel
+from database.models.challengeoptionpass import ChallengeOptionPassModel
+
+databaseIa.create_tables([ChallengeModel,ChallengeOptionModel,ChallengeOptionPassModel])
